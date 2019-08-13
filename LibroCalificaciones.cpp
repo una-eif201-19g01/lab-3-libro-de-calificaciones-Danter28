@@ -15,7 +15,34 @@
 
 #include "LibroCalificaciones.h"
 #include <iomanip>
-#include <iostream>
+#include <iostream> 
+
+LibroCalificaciones::LibroCalificaciones() {
+}
+
+LibroCalificaciones::LibroCalificaciones(const string &nombreCurso, int[][EXAMENES]) {
+}
+
+int LibroCalificaciones::obtenerNotaMinima() {
+}
+
+int LibroCalificaciones::obtenerNotaMaxima() {
+}
+
+double LibroCalificaciones::obtenerPromedio(const int[], const int) {
+}
+
+string LibroCalificaciones::obtenerReporteNotas() {
+}
+
+string LibroCalificaciones::obtenerReporteNotasMaxMin() {
+}
+
+string LibroCalificaciones::getNombreCurso() {
+}
+
+void LibroCalificaciones::setNombreCurso() {
+}
 
 
 
