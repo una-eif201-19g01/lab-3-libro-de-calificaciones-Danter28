@@ -1,0 +1,24 @@
+[35m[1mScanning dependencies of target LibroCalificaciones[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/LibroCalificaciones.dir/main.cpp.obj[0m
+In file included from C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/main.cpp:18:0:
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.h:28:24: error: invalid use of non-static data member 'LibroCalificaciones::ESTUDIANTES'
+     int calificaciones[ESTUDIANTES][EXAMENES];
+                        ^~~~~~~~~~~
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.h:25:21: note: declared here
+     int ESTUDIANTES=10;
+                     ^~
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.h:28:37: error: invalid use of non-static data member 'LibroCalificaciones::EXAMENES'
+     int calificaciones[ESTUDIANTES][EXAMENES];
+                                     ^~~~~~~~
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.h:26:18: note: declared here
+     int EXAMENES=3;
+                  ^
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.h:36:47: error: invalid use of non-static data member 'LibroCalificaciones::EXAMENES'
+     LibroCalificaciones(const string &, int[][EXAMENES]);
+                                               ^~~~~~~~
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.h:26:18: note: declared here
+     int EXAMENES=3;
+                  ^
+make.exe[2]: *** [CMakeFiles/LibroCalificaciones.dir/main.cpp.obj] Error 1
+make.exe[1]: *** [CMakeFiles/LibroCalificaciones.dir/all] Error 2
+make.exe: *** [all] Error 2

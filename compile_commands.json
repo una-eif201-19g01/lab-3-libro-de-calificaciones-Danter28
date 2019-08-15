@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28",
+  "command": "C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/nbproject/private/tools/localhost/MinGW_1/g++.exe    -g3 -gdwarf-2   -std=gnu++14 -o CMakeFiles/LibroCalificaciones.dir/main.cpp.obj -c C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/main.cpp",
+  "file": "C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/main.cpp"
+},
+{
+  "directory": "C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28",
+  "command": "C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/nbproject/private/tools/localhost/MinGW_1/g++.exe    -g3 -gdwarf-2   -std=gnu++14 -o CMakeFiles/LibroCalificaciones.dir/LibroCalificaciones.cpp.obj -c C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.cpp",
+  "file": "C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.cpp"
+}
+]

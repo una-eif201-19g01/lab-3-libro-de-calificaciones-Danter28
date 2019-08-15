@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.cpp
+LibroCalificaciones.h
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.h
+iomanip
+-
+iostream
+-
+
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.h
+string
+-
+
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/main.cpp
+iostream
+-
+LibroCalificaciones.h
+C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/LibroCalificaciones.h
+
