@@ -19,26 +19,27 @@
 
 #include <string>
 using std::string;
+static const int ESTUDIANTES = 10;
+static const int EXAMENES = 3;
 
 class LibroCalificaciones {
 private:
-    int ESTUDIANTES=10;
-    int EXAMENES=3;
+
     string nombreCurso;
     int calificaciones[ESTUDIANTES][EXAMENES];
     int obtenerNotaMinima();
     int obtenerNotaMaxima();
-    double obtenerPromedio(const int[],const int);
-       
+    double obtenerPromedio(const int[], const int);
+
 
 public:
     LibroCalificaciones();
-    LibroCalificaciones(const string &, int[][this->EXAMENES]);
+    LibroCalificaciones(const string &nombreCurso, int[][EXAMENES]);
     string obtenerReporteNotas();
     string obtenerReporteNotasMaxMin();
     string getNombreCurso();
     void setNombreCurso(string&);
-    
+
 };
 
 
