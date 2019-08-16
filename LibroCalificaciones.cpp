@@ -18,67 +18,77 @@
 #include <iostream> 
 
 LibroCalificaciones::LibroCalificaciones() {
-	/*this->nombreCurso=" ";
-	for(int contadorY=0;contadorY<=ESTUDIANTES;contadorY++){
-		for(int contadorX=0;contadorX<=EXAMENES;contadorX++){
-			calificaciones[contadorY][contadorX]=0;
-		}
-	*/
-}
+    nombreCurso = "";
+    for (int contadorY = 0; contadorY <= ESTUDIANTES; contadorY++) {
+        for (int contadorX = 0; contadorX <= EXAMENES; contadorX++) {
+            calificaciones[contadorY][contadorX] = 0;
+        }
 
-LibroCalificaciones::LibroCalificaciones(const string &nombreCurso, int[][EXAMENES]) {
-		/*for(int contadorY=0;contadorY<=ESTUDIANTES;contadorY++){
-			for(int contadorX=0;contadorX<=EXAMENES;contadorX++){
-	}*/
-}
+    }
 
-int LibroCalificaciones::obtenerNotaMinima() {
-	int notaMinima=(calificaciones[0][0]);
-	for(int contadorY=0;contadorY<=ESTUDIANTES;contadorY++){
-	for(int contadorX=0;contadorX<=EXAMENES;contadorX++){
-		(notaMinima>=calificaciones[contadorY][contadorX])?
-			notaMinima=calificaciones[contadorY][contadorX];
-	}
-	}
-	return notaMinima;
-}
+    LibroCalificaciones::LibroCalificaciones(const string &nombreCurso, int[][this->EXAMENES]) {
+        nombreCurso= nombreCurso; 
+        calificaciones[this->ESTUDIANTES][this->EXAMENES] = {
+            {87, 96, 70},
+            {68, 87, 90},
+            {94, 100, 90},
+            {100, 81, 82},
+            {83, 65, 85},
+            {78, 87, 65},
+            {85, 75, 83},
+            {91, 94, 100},
+            {76, 72, 84},
+            {87, 93, 73}};
+    }
 
-int LibroCalificaciones::obtenerNotaMaxima() {
-	int notaMaxima=calificaciones[0][0];
-	for(int contadorY=0;contadorY<=ESTUDIANTES;contadorY++){
-		for(int contadorX=0;contadorX<=EXAMENES;contadorX++){
-			(notaMaxima<=calificaciones[contadorY][contadorX])?
-				notaMaxima=calificaciones[contadorY][contadorX];
-		}
-	}
-	return notaMaxima;
-}
+    int LibroCalificaciones::obtenerNotaMinima() {
+        int notaMinima = (calificaciones[0][0]);
+        for (int contadorY = 0; contadorY <= ESTUDIANTES; contadorY++) {
+            for (int contadorX = 0; contadorX <= EXAMENES; contadorX++) {
+                if (notaMinima >= calificaciones[contadorY][contadorX])
+                    notaMinima = calificaciones[contadorY][contadorX];
+            }
+        }
+        return notaMinima;
+    }
 
-double LibroCalificaciones::obtenerPromedio(const int[], const int) {
-	double suma;
-	
-		for(int contadorX=0;contadorX<=EXAMENES;contadorX++){
-			suma=suma+calificaciones[[]][contadorX];
-		}
-	
-	return suma/(EXAMENES);
-}
+    int LibroCalificaciones::obtenerNotaMaxima() {
+        int notaMaxima = calificaciones[0][0];
+        for (int contadorY = 0; contadorY <= ESTUDIANTES; contadorY++) {
+            for (int contadorX = 0; contadorX <= EXAMENES; contadorX++) {
+                if (notaMaxima <= calificaciones[contadorY][contadorX])
+                    notaMaxima = calificaciones[contadorY][contadorX];
+            }
+        }
+        return notaMaxima;
+    }
 
-string LibroCalificaciones::obtenerReporteNotas() {
-	string reporteNotas;
-	//reporteNotas=reporteNotas+
-		
-}
+    double LibroCalificaciones::obtenerPromedio(const int[], const int) {
+        double suma;
 
-string LibroCalificaciones::obtenerReporteNotasMaxMin() {
-}
+        for (int contadorX = 0; contadorX <= EXAMENES; contadorX++) {
+            suma = suma + calificaciones[[]][contadorX];
+        }
 
-string LibroCalificaciones::getNombreCurso() {return nombreCurso;}
+        return suma / (EXAMENES);
+    }
 
+    string LibroCalificaciones::obtenerReporteNotas() {
+        string reporteNotas;
+        //reporteNotas=reporteNotas+
 
-void LibroCalificaciones::setNombreCurso(string &nombreCurso) {
-    this->nombreCurso=nombreCurso;
-}
+    }
+
+    string LibroCalificaciones::obtenerReporteNotasMaxMin() {
+    }
+
+    string LibroCalificaciones::getNombreCurso() {
+        return nombreCurso;
+    }
+
+    void LibroCalificaciones::setNombreCurso(string & nombreCurso) {
+        this->nombreCurso = nombreCurso;
+    }
 
 
 

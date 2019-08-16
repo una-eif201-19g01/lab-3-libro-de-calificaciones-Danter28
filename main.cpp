@@ -19,7 +19,7 @@
 
 int main() {
 	string curso="Curso Progra I";
-	LibroCalificaciones curso1(curso,[][EXAMENES]);
+	//LibroCalificaciones curso1(curso,[][]);
 	
 	
 	

@@ -33,7 +33,7 @@ private:
 
 public:
     LibroCalificaciones();
-    LibroCalificaciones(const string &, int[][EXAMENES]);
+    LibroCalificaciones(const string &, int[][this->EXAMENES]);
     string obtenerReporteNotas();
     string obtenerReporteNotasMaxMin();
     string getNombreCurso();
