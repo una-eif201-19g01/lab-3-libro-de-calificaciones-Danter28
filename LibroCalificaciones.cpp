@@ -26,9 +26,9 @@ LibroCalificaciones::LibroCalificaciones() {
 
     }
 
-    LibroCalificaciones::LibroCalificaciones(const string &nombreCurso, int[][this->EXAMENES]) {
+    LibroCalificaciones::LibroCalificaciones(const string &nombreCurso, int[][EXAMENES]) {
         nombreCurso= nombreCurso; 
-        calificaciones[this->ESTUDIANTES][this->EXAMENES] = {
+        calificaciones[ESTUDIANTES][EXAMENES] = {
             {87, 96, 70},
             {68, 87, 90},
             {94, 100, 90},
