@@ -1,3 +1,0 @@
-C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/CMakeFiles/edit_cache.dir
-C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/CMakeFiles/LibroCalificaciones.dir
-C:/Users/dante/OneDrive/Documentos/NetBeansProjects/lab-3-libro-de-calificaciones-Danter28/CMakeFiles/rebuild_cache.dir
