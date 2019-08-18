@@ -25,20 +25,20 @@ static const int EXAMENES = 3;
 class LibroCalificaciones {
 private:
 
-    string nombreCurso;
-    int calificaciones[ESTUDIANTES][EXAMENES];
-    int obtenerNotaMinima();
-    int obtenerNotaMaxima();
-    double obtenerPromedio(const int[], const int);
+	string nombreCurso;
+	int calificaciones[ESTUDIANTES][EXAMENES];
+	int obtenerNotaMinima();
+	int obtenerNotaMaxima();
+	double obtenerPromedio(const int[], const int);
 
 
 public:
-    LibroCalificaciones();
-    LibroCalificaciones(const string &nombreCurso, int[][EXAMENES]);
-    string obtenerReporteNotas();
-    string obtenerReporteNotasMaxMin();
-    string getNombreCurso();
-    void setNombreCurso(string&);
+	LibroCalificaciones();
+	LibroCalificaciones(const string& nombreCurso, int[][EXAMENES]);
+	string obtenerReporteNotas();
+	string obtenerReporteNotasMaxMin();
+	string getNombreCurso();
+	void setNombreCurso(string&);
 
 };
 

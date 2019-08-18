@@ -1,0 +1,3 @@
+C:/Users/dante/OneDrive/Documentos/proyectos visual studio/una-eif201-19g01/lab-3-libro-de-calificaciones-Danter28/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/dante/OneDrive/Documentos/proyectos visual studio/una-eif201-19g01/lab-3-libro-de-calificaciones-Danter28/out/build/x64-Debug/CMakeFiles/LibroCalificaciones.dir
+C:/Users/dante/OneDrive/Documentos/proyectos visual studio/una-eif201-19g01/lab-3-libro-de-calificaciones-Danter28/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
