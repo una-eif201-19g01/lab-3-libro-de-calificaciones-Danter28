@@ -18,7 +18,7 @@
 #include <iostream> 
 using std::to_string;
 
-	//LibroCalificaciones::LibroCalificaciones(){}
+	LibroCalificaciones::LibroCalificaciones(){}
 
 	LibroCalificaciones::LibroCalificaciones(const string& nombreCurso, int arrayCalificaciones[][EXAMENES]) {
 		this->nombreCurso = nombreCurso;
@@ -62,7 +62,7 @@ using std::to_string;
 	string LibroCalificaciones::obtenerReporteNotas() {
 		string reporteNotas = "\nLas siguientes son las notas del curso [Curso Progra I]:\n\t\t\t\tExamen 1\tExamen 2\tExamen 3\tPromedio";
 		for (int estudiante = 0; estudiante < ESTUDIANTES; ++estudiante) {
-			reporteNotas = reporteNotas + "\nEstudiante[" + to_string(estudiante) + "]\t\t\t";
+			reporteNotas = reporteNotas + "\nEstudiante[" + to_string(estudiante+1) + "]\t\t\t";//si se desea que empiece la lista en 0, eliminar el +1.
 			for (int examen = 0; examen < EXAMENES; ++examen) {
 				reporteNotas = reporteNotas + to_string(calificaciones[estudiante][examen]) + "\t\t";
 			}
