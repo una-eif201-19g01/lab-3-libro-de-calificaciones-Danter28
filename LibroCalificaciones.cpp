@@ -7,7 +7,7 @@
 	 *
 	 *        Created:  2019-08-12
 	 *
-	 *         Author:  Maikol Guzman Alan mikeguzman@gmail.com
+	 *         Author:  Danilo Alvarado Arce
 	 *   Organization:  Universidad Nacional de Costa Rica
 	 *
 	 * =====================================================================================
@@ -16,8 +16,9 @@
 #include "LibroCalificaciones.h"
 #include <iomanip>
 #include <iostream> 
+using std::to_string;
 
-	//LibroCalificaciones::LibroCalificaciones(){}
+	LibroCalificaciones::LibroCalificaciones(){}
 
 	LibroCalificaciones::LibroCalificaciones(const string& nombreCurso, int arrayCalificaciones[][EXAMENES]) {
 		this->nombreCurso = nombreCurso;
@@ -48,21 +49,28 @@
 		return notaMaxima;
 	}
 
-	double LibroCalificaciones::obtenerPromedio(const int[], const int) {
-		double suma;
+	double LibroCalificaciones::obtenerPromedio(const int estudiante) {
+		double suma=0;
 
-		for (int contadorX = 0; contadorX <= EXAMENES; contadorX++) {
-			//suma = suma + calificaciones [[]] [contadorX];
+		for (int examen = 0; examen < EXAMENES; ++examen) {
+			suma = suma + calificaciones [estudiante][examen] ;
 		}
 
-		return suma / (EXAMENES);
+		return (suma / (EXAMENES));
 	}
 
 	string LibroCalificaciones::obtenerReporteNotas() {
-		string reporteNotas;
-		//reporteNotas=reporteNotas+
-
+		string reporteNotas = "\nLas siguientes son las notas del curso [Curso Progra I]:\n\t\t\t\tExamen 1\tExamen 2\tExamen 3\tPromedio";
+		for (int estudiante = 0; estudiante < ESTUDIANTES; ++estudiante) {
+			reporteNotas = reporteNotas + "\nEstudiante[" + to_string(estudiante) + "]\t";
+			for (int examen = 0; examen < EXAMENES; ++examen) {
+				reporteNotas = reporteNotas + to_string(calificaciones[estudiante][examen]) + "\t\t\t";
+			}
+			reporteNotas = reporteNotas + to_string(obtenerPromedio(estudiante));
+		}
+		return reporteNotas;
 	}
+			
 
 	string LibroCalificaciones::obtenerReporteNotasMaxMin() {
 	}

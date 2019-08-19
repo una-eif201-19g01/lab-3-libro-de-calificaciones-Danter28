@@ -7,7 +7,7 @@
  *
  *        Created:  2019-08-12
  *
- *         Author:  Maikol Guzman Alan mikeguzman@gmail.com
+ *         Author:  Danilo Alvarado Arce
  *   Organization:  Universidad Nacional de Costa Rica
  *
  * =====================================================================================
@@ -39,4 +39,4 @@ int main() {
 	cout << lC.obtenerReporteNotas() << endl;
 	cout << lC.obtenerReporteNotasMaxMin() << endl;
 };
-//LibroCalificaciones curso1(curso,[][]);
+

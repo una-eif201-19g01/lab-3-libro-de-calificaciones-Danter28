@@ -7,7 +7,7 @@
  *
  *        Created:  2019-08-12
  *
- *         Author:  Maikol Guzman Alan mikeguzman@gmail.com
+ *         Author:  Danilo Alvarado Arce
  *   Organization:  Universidad Nacional de Costa Rica
  *
  * =====================================================================================
@@ -29,11 +29,11 @@ private:
 	int calificaciones[ESTUDIANTES][EXAMENES];
 	int obtenerNotaMinima();
 	int obtenerNotaMaxima();
-	double obtenerPromedio(const int[], const int);
+	double obtenerPromedio( const int);
 
 
 public:
-	//LibroCalificaciones();
+	LibroCalificaciones();
 	LibroCalificaciones(const string& nombreCurso, int[][EXAMENES]);
 	string obtenerReporteNotas();
 	string obtenerReporteNotasMaxMin();
