@@ -16,10 +16,15 @@
 
 #include <iostream>
 #include "LibroCalificaciones.h"
+using std::cout;
+using std::endl;
 
 int main() {
+	static const int ESTUDIANTES = 10;
+	static const int EXAMENES = 3;
 	string curso = "Curso Progra I";
-	/*{87, 96, 70},
+	int listaCalificaciones[ESTUDIANTES][EXAMENES] = {
+	{87, 96, 70},
 	{ 68, 87, 90 },
 	{ 94, 100, 90 },
 	{ 100, 81, 82 },
@@ -28,6 +33,10 @@ int main() {
 	{ 85, 75, 83 },
 	{ 91, 94, 100 },
 	{ 76, 72, 84 },
-	{ 87, 93, 73 }*/
+	{ 87, 93, 73 }
+	};
+	LibroCalificaciones lC(curso, listaCalificaciones);
+	cout << lC.obtenerReporteNotas() << endl;
+	cout << lC.obtenerReporteNotasMaxMin() << endl;
 };
 //LibroCalificaciones curso1(curso,[][]);

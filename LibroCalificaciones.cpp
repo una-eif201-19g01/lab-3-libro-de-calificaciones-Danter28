@@ -17,32 +17,32 @@
 #include <iomanip>
 #include <iostream> 
 
-	LibroCalificaciones::LibroCalificaciones() { }
+	//LibroCalificaciones::LibroCalificaciones(){}
 
 	LibroCalificaciones::LibroCalificaciones(const string& nombreCurso, int arrayCalificaciones[][EXAMENES]) {
 		this->nombreCurso = nombreCurso;
-		for (int estudiante = 0; estudiante <= ESTUDIANTES; estudiante++)
-			for (int examen = 0; examen <= EXAMENES; examen++)
+		for (int estudiante = 0; estudiante < ESTUDIANTES; ++estudiante)
+			for (int examen = 0; examen < EXAMENES; ++examen)
 				calificaciones[estudiante][examen] = arrayCalificaciones[estudiante][examen];
 	}
 
 	int LibroCalificaciones::obtenerNotaMinima() {
-		int notaMinima = (calificaciones[0][0]);
-		for (int contadorY = 0; contadorY <= ESTUDIANTES; contadorY++) {
-			for (int contadorX = 0; contadorX <= EXAMENES; contadorX++) {
-				if (notaMinima >= calificaciones[contadorY][contadorX])
-					notaMinima = calificaciones[contadorY][contadorX];
+		int notaMinima = 100;
+		for (int estudiante = 0; estudiante <= ESTUDIANTES; ++estudiante) {
+			for (int examen = 0; examen <= EXAMENES; ++examen) {
+				if (notaMinima > calificaciones[estudiante][examen])
+					notaMinima = calificaciones[estudiante][examen];
 			}
 		}
 		return notaMinima;
 	}
 
 	int LibroCalificaciones::obtenerNotaMaxima() {
-		int notaMaxima = calificaciones[0][0];
-		for (int contadorY = 0; contadorY <= ESTUDIANTES; contadorY++) {
-			for (int contadorX = 0; contadorX <= EXAMENES; contadorX++) {
-				if (notaMaxima <= calificaciones[contadorY][contadorX])
-					notaMaxima = calificaciones[contadorY][contadorX];
+		int notaMaxima = 0;
+		for (int estudiante = 0; estudiante <= ESTUDIANTES; ++estudiante) {
+			for (int examen = 0; examen <= EXAMENES; ++examen) {
+				if (notaMaxima < calificaciones[estudiante][examen])
+					notaMaxima = calificaciones[estudiante][examen];
 			}
 		}
 		return notaMaxima;
