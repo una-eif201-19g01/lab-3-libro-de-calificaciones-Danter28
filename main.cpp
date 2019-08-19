@@ -36,7 +36,7 @@ int main() {
 	{ 87, 93, 73 }
 	};
 	LibroCalificaciones lC(curso, listaCalificaciones);
-	cout << lC.obtenerReporteNotas() << endl;
+	cout << lC.obtenerReporteNotas() << endl<<endl;
 	cout << lC.obtenerReporteNotasMaxMin() << endl;
 };
 

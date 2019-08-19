@@ -18,7 +18,7 @@
 #include <iostream> 
 using std::to_string;
 
-	LibroCalificaciones::LibroCalificaciones(){}
+	//LibroCalificaciones::LibroCalificaciones(){}
 
 	LibroCalificaciones::LibroCalificaciones(const string& nombreCurso, int arrayCalificaciones[][EXAMENES]) {
 		this->nombreCurso = nombreCurso;
@@ -29,9 +29,9 @@ using std::to_string;
 
 	int LibroCalificaciones::obtenerNotaMinima() {
 		int notaMinima = 100;
-		for (int estudiante = 0; estudiante <= ESTUDIANTES; ++estudiante) {
-			for (int examen = 0; examen <= EXAMENES; ++examen) {
-				if (notaMinima > calificaciones[estudiante][examen])
+		for (int estudiante = 0; estudiante < ESTUDIANTES; ++estudiante) {
+			for (int examen = 0; examen < EXAMENES; ++examen) {
+				if (notaMinima >= calificaciones[estudiante][examen])
 					notaMinima = calificaciones[estudiante][examen];
 			}
 		}
@@ -40,8 +40,8 @@ using std::to_string;
 
 	int LibroCalificaciones::obtenerNotaMaxima() {
 		int notaMaxima = 0;
-		for (int estudiante = 0; estudiante <= ESTUDIANTES; ++estudiante) {
-			for (int examen = 0; examen <= EXAMENES; ++examen) {
+		for (int estudiante = 0; estudiante < ESTUDIANTES; ++estudiante) {
+			for (int examen = 0; examen < EXAMENES; ++examen) {
 				if (notaMaxima < calificaciones[estudiante][examen])
 					notaMaxima = calificaciones[estudiante][examen];
 			}
@@ -62,9 +62,9 @@ using std::to_string;
 	string LibroCalificaciones::obtenerReporteNotas() {
 		string reporteNotas = "\nLas siguientes son las notas del curso [Curso Progra I]:\n\t\t\t\tExamen 1\tExamen 2\tExamen 3\tPromedio";
 		for (int estudiante = 0; estudiante < ESTUDIANTES; ++estudiante) {
-			reporteNotas = reporteNotas + "\nEstudiante[" + to_string(estudiante) + "]\t";
+			reporteNotas = reporteNotas + "\nEstudiante[" + to_string(estudiante) + "]\t\t\t";
 			for (int examen = 0; examen < EXAMENES; ++examen) {
-				reporteNotas = reporteNotas + to_string(calificaciones[estudiante][examen]) + "\t\t\t";
+				reporteNotas = reporteNotas + to_string(calificaciones[estudiante][examen]) + "\t\t";
 			}
 			reporteNotas = reporteNotas + to_string(obtenerPromedio(estudiante));
 		}
@@ -73,6 +73,9 @@ using std::to_string;
 			
 
 	string LibroCalificaciones::obtenerReporteNotasMaxMin() {
+		string reporteMinMax;
+		reporteMinMax = "La nota minima es: [" + to_string(obtenerNotaMinima()) + "]\n\nLa nota maxima es: [" + to_string(obtenerNotaMaxima())+"]";
+		return reporteMinMax;
 	}
 
 	string LibroCalificaciones::getNombreCurso() {
