@@ -75,7 +75,7 @@ LibroCalificaciones::LibroCalificaciones() {
 
     string LibroCalificaciones::obtenerReporteNotas() {
         string reporteNotas;
-        //reporteNotas=reporteNotas+
+        //reporteNotas=reporteNotas+-
 
     }
 
