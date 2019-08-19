@@ -59,6 +59,7 @@ using std::to_string;
 		return (suma / (EXAMENES));
 	}
 
+		
 	string LibroCalificaciones::obtenerReporteNotas() {
 		int cantExamenes = 1;
 		string reporteNotas = "\nLas siguientes son las notas del curso [Curso Progra I]:\n\t\t\t";
@@ -67,7 +68,7 @@ using std::to_string;
 		for (int estudiante = 0; estudiante < ESTUDIANTES; ++estudiante) {
 			reporteNotas = reporteNotas + "\nEstudiante[" + to_string(estudiante + 1) + "]\t\t\t";//si se desea que empiece la lista en 0, eliminar el +1.
 			for (int examen = 0; examen < EXAMENES; ++examen) {
-				reporteNotas = reporteNotas + to_string(calificaciones[estudiante][examen]) + "\t\t";
+					reporteNotas = reporteNotas + to_string(calificaciones[estudiante][examen]) + "\t\t";
 			}
 			reporteNotas = reporteNotas + to_string(obtenerPromedio(estudiante));
 		}
